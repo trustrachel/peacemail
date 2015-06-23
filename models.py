@@ -17,9 +17,9 @@ class Message(object):
     
     # Not sure if these headers are in all mail? 
     for header in json['payload']['headers']:
-      if header['name'] == 'From':
+      if header['name'] == constants.FROM_HEADER:
         self.sender = header['value']
-      elif header['name'] == 'To':
+      elif header['name'] == constants.TO_HEADER:
         self.to = header['value']
 		
     self.snippet = json['snippet']

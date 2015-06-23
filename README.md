@@ -5,7 +5,7 @@ I deal a lot with a thing I call jerkbrain.
 
 Jerkbrain is when your brain lies to you and tells you that normal, everyday things are scary and could murder you. This was a good thing back in the day where tiger-sized spiders could drop out of a tree at any moment and eat you, but not so good when the scariest thing we deal with is checking email.
 
-The problem with a brain that refuses to tell the difference between spiders and cranky emails from people I don't like is I don't check email as much as I should, since it might contain digital spiders that will pour out of the computer and engulf me in a screaming wriggling mass. And this is a problem, both for me and the digital spiders, who just need me to
+The problem with a brain that refuses to tell the difference between spiders and cranky emails from people I don't like is I don't check email as much as I should, since it might contain digital spiders that will pour out of the computer and engulf me in a screaming wriggling mass. And this is a problem, both for me and the digital spiders, who just need me to confirm details or whatever.
 
 So I wrote a script to make it better. This tells you whether or not you have mail and if that mail is from particular people so you know whether your email contains spiders and can plan accordingly. 
 
