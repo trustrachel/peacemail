@@ -1,0 +1,6 @@
+*~
+*.pyc
+
+credentials.dat
+secrets.json
+personal.py
