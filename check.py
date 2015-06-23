@@ -1,14 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import sys
 
 import httplib2
-import pprint
-import sys
-
-
-
 import simplejson as json
 from pprint import pprint
 
@@ -21,8 +15,8 @@ from oauth2client.client import OAuth2WebServerFlow
 from oauth2client.tools import argparser, run_flow
 
 from models import Message, Summary
-
 import constants
+
 
 summary = Summary()
 
@@ -42,7 +36,7 @@ def authorize_me():
 	credentials = storage.get()
 
 	# This makes oauth2 flow work better on the command line, since it doesn't try to redirect
-	# to a url, which we don't have.
+	# to the web server we're not running.
 	flags = argparser.parse_args(args=['--noauth_local_webserver'])
 	
 	if credentials is None or credentials.invalid:
@@ -55,7 +49,7 @@ def authorize_me():
 
 	return service, http
 	
-def print_mail(request_id, message, exception):
+def parse_mail(request_id, message, exception):
 
 	if exception is not None:
 		raise RuntimeError(exception)
@@ -65,7 +59,7 @@ def print_mail(request_id, message, exception):
 	summary.add(msg)
 			
   
-def show_mail():
+def summarize_mail():
 
 	service, http = authorize_me()
 	batch = BatchHttpRequest()
@@ -73,10 +67,12 @@ def show_mail():
 	response = service.users().messages().list(userId=constants.USER_ID, q=constants.DEFAULT_QUERY).execute()
 	messages = response['messages']
 	
+	# TODO think this only gets the first few, might need to page through results
+	
 	for message in messages:
 		request = service.users().messages().get(userId=constants.USER_ID, id=message['id'], format=constants.RESPONSE_FORMAT, metadataHeaders=[constants.FROM_HEADER, constants.TO_HEADER])
 	
-		batch.add(request, callback=print_mail)
+		batch.add(request, callback=parse_mail)
 
 	batch.execute(http=http)
 	
@@ -100,4 +96,4 @@ def show_mail():
 
 
 if __name__ == '__main__':
-  show_mail()
+  summarize_mail()
