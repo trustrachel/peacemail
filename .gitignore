@@ -4,3 +4,6 @@
 credentials.dat
 secrets.json
 personal.py
+client_secret.json
+
+.idea
