@@ -3,11 +3,11 @@ peacemail
 
 I deal a lot with a thing I call jerkbrain. 
 
-Jerkbrain is when your brain lies to you and tells you that normal, everyday things are scary and could murder you. This was a good thing back in the day when tiger-sized spiders constantly dropped out of trees to suck out our sweet juicy innards, but not so good when the scariest thing we deal with is, say, checking email.
+Jerkbrain is when your brain lies to you and tells you that normal, everyday things are scary and could murder you. This was a good thing back in the day when giant spiders constantly swarmed out of trees and sucked out our sweet juicy innards, but not so good when the scariest thing we deal with is, say, checking email.
 
-The problem with a brain that refuses to tell the difference between cranky emails from people I don't like and spiders pouring out of the computer to engulf me in a screaming wriggling mass is I don't check email as much as I should. And this is a problem, both for me and the spiders, who just want to confirm details or whatever.
+The problem with a brain that refuses to tell the difference between cranky emails from people I don't like and a spider swarm that wants to engulf me in a screaming wriggling mass is I don't check email as much as I should. And this is a problem, both for me and the spiders, who just want to confirm details on lunch or whatever.
 
-So I wrote a script. This summarizes your inbox and flags when there's mail from particular people, so you know when your email contains spiders and can plan accordingly. 
+So I wrote a script. This lets you know when there's mail, optionally shows you the sender and the first line, and flags when there's mail from particular people; this lets you know when your email contains spiders so you can plan accordingly. 
 
 Setup
 ------
