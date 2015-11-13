@@ -18,17 +18,19 @@ You'll need to set up oauth access to your gmail account.
 
 2. Go to APIs & Auth -> APIs and add the Gmail API to the project.
 
-3. Go to APIs & Auth -> Credentials and create a new client id. Choose "Installed Application" as the type.
+3. Go to APIs & Auth -> Credentials and click the *Add credentials* button and select *OAuth 2.0 client ID*.
 
-4. It will make you configure an OAuth consent screen, so put whatever makes it happy. 
+4. Select the application type *Other*, name it whatever (PeaceMail is a good option) and click the *Create* button.
 
-5. Once done, download the json file, put it in this directory and rename it 'secrets.json'
+5. Once done, there will be a download button next to the client id. Click it.
+
+6. Put that file in this directory and rename it `client_secret.json`.
 
 Next, set up the script itself.
 
-6. Create a new virtual environment and do: pip install -r requirements.txt
+7. Create a new virtual environment and do: pip install -r requirements.txt
 
-7. Rename default_personal.py to personal.py and add your email addresses and any other configuration you like. 
+8. Rename default_personal.py to personal.py and add your email addresses and any other configuration you like.
 
 Usage
 ------
