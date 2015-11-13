@@ -7,7 +7,7 @@ Jerkbrain is when your brain lies to you and tells you that normal, everyday thi
 
 The problem with a brain that refuses to tell the difference between cranky emails from people I don't like and a spider swarm that wants to engulf me in a screaming wriggling mass is I don't check email as much as I should. And this is a problem, both for me and the spiders, who just want to confirm details on lunch or whatever.
 
-So I wrote a script. This lets you know when there's mail, optionally shows you the sender and the first line, and flags when there's mail from particular people; this lets you know when your email contains spiders so you can plan accordingly. 
+So I wrote a script. It checks your email for new messages, optionally shows you the sender and the first line, and flags when there's mail from particular people, thus letting you know when your email contains spiders so you can plan accordingly.  
 
 Setup
 ------
